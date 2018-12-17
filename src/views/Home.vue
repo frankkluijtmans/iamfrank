@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld :msg="'Welcome to this website!'" />
+    <HelloWorld :msg="'My name is Frank'" />
   </div>
 </template>
 
