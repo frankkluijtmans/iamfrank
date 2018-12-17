@@ -1,14 +1,13 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
-    {{ computedProperty }}
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <HelloWorld :msg="'Welcome to this website!'" />
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+import HelloWorld from '@/components/HelloWorld.vue';
 
 @Component({
   components: {
@@ -17,20 +16,9 @@ import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
 })
 export default class Home extends Vue {
 
-  mounted(): void {
-
-    alert('derp');
-  }
-
-  get computedProperty(): string {
-
-    return 'derp';
-  }
 }
 </script>
 
 <style lang="scss">
-  body {
-    background: red;
-  }
+
 </style>
